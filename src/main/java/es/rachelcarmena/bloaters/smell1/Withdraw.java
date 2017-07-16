@@ -1,13 +1,13 @@
 package es.rachelcarmena.bloaters.smell1;
 
 public class Withdraw {
-    private double amount;
+    private Amount amount;
 
-    public Withdraw(double amount) {
+    public Withdraw(Amount amount) {
         this.amount = amount;
     }
 
-    public double getAmount() {
+    public Amount getAmount() {
         return amount;
     }
 }
