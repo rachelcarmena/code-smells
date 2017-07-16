@@ -20,8 +20,8 @@ public class CoolStackShould {
     @Test
     public void return_size() {
         CoolStack coolStack = new CoolStack();
-        coolStack.add("lala");
-        coolStack.add("lolo");
+        coolStack.push("lala");
+        coolStack.push("lolo");
 
         assertThat(coolStack.size(), is(2));
     }
@@ -36,7 +36,7 @@ public class CoolStackShould {
     @Test
     public void inform_that_is_not_empty_when_it_has_elements() {
         CoolStack coolStack = new CoolStack();
-        coolStack.add("lala");
+        coolStack.push("lala");
 
         assertFalse(coolStack.isEmpty());
     }
