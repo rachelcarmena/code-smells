@@ -17,13 +17,13 @@ public class DistanceCalculatorShould {
     public void calculate_distance_between_points() {
         double distance = distanceCalculator.betweenPoints(1, 5, 2, 8);
 
-        assertEquals(distance, 3.16, 0.01);
+        assertEquals(3.16, distance,0.01);
     }
 
     @Test
     public void calculate_distance_from_one_point_to_origin() {
         double distance = distanceCalculator.toOriginFrom(1, 5);
 
-        assertEquals(distance, 5.1, 0.01);
+        assertEquals(5.1, distance,0.01);
     }
 }
