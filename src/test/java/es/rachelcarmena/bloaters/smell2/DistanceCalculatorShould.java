@@ -15,14 +15,14 @@ public class DistanceCalculatorShould {
 
     @Test
     public void calculate_distance_between_points() {
-        double distance = distanceCalculator.betweenPoints(1, 5, 2, 8);
+        double distance = distanceCalculator.betweenPoints(new Point(1, 5), new Point(2, 8));
 
         assertEquals(3.16, distance, 0.01);
     }
 
     @Test
     public void calculate_distance_from_one_point_to_origin() {
-        double distance = distanceCalculator.toOriginFrom(1, 5);
+        double distance = distanceCalculator.toOriginFrom(new Point(1, 5));
 
         assertEquals(5.1, distance, 0.01);
     }
